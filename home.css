@@ -1,0 +1,130 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu',sans-serif;
+}
+.main
+{
+    position: relative;
+    min-height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 100px;
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+.title{
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
+.navigation
+{
+    padding: 13px 23px 13px 23px;
+    display: flex;
+}
+.navigation li
+{
+    list-style: none;
+}
+.navigation li a
+{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.navigation li a:hover{
+    padding: 13px 13px 13px 13px;
+    border-radius: 15px;
+    background:linear-gradient(60deg,#ec0ab0,#0895dc);
+}
+.content
+{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.content .text
+{
+    width: 150px;
+    max-width: 600px;
+}
+
+.content .text h2
+{
+    color: #fff;
+    font-size: 3em;
+    font-weight: 300;
+}
+.content .text h2 span
+{
+    font-style: italic;
+    font-weight: 700;
+}
+.content .text p
+{
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    margin: 20px 0;
+}
+.btn
+{
+    position: relative;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 20px 50px;
+    background: #fff;
+    color: #333;
+    font-size: 1.1em;
+    font-weight: 500;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 0.25s;
+}
+.btn:hover
+{
+    letter-spacing: 5px;
+}
+.slider
+{
+    position: relative;
+}
+.slider .slides
+{
+    display: flex;
+}
+.slider .slides.active
+{
+    display: block;
+}
+.slider .slides img
+{
+    width: 100%;
+    max-width: 400px;
+}
+.art{
+    display: inline-block;
+    justify-content: space-around;
+
+}

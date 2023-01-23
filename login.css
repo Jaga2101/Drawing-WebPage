@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'jost',sans-serif;
+    background:linear-gradient(to button,#0f0c29,#302b63,#24243e);
+}
+.main{
+    width: 350px;
+    height: 500px;
+    background: linear-gradient(160deg,#ec0ab0,#0895dc);
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px black;
+}
+#chk{
+    display:none;
+}
+.signup{
+    text-transform: uppercase;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+label{
+    color: #fff;
+    font-size: 2.3em;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    cursor: pointer;
+    transition: -5s ease-in-out;
+}
+input{
+    width: 75%;
+    height: 30px;
+    background: #e0dede;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+}
+button{
+    width: 70%;
+    height: 40px;
+    margin: 10px auto;
+    justify-content: center;
+    display: block;
+    color:#fff;
+    background:linear-gradient(160deg,#0895dc,#ec0ab0);
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+    outline:none;
+    border: none;
+    border-radius: 14px;
+    transition: .2s ease-in;
+    cursor: pointer;
+}
+button:hover{
+    background: linear-gradient(160deg,#f3f5f6,#090909);
+}
+.login{
+    text-transform: uppercase;
+    height: 460px;
+    background: #fff;
+    border-radius: 5% 5%;
+    transform: translateY(-180px);
+    transition: .8s ease-in-out;
+}
+.login label{
+    color:#0895dc;
+    transform: scale(.6);
+}
+a{
+    font-size: 12;
+    text-decoration: solid;
+}
+#chk:checked ~ .login{
+    transform: translateY(-500px);
+}
+#chk:checked ~ .login label{
+    transform: scale(1);
+}
+#chk:checked ~ .signup label{
+    transform: scale(.6);
+}
+img{
+    width: 30px;
+    height: 30px;
+}

@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    height: 100vh;
+    background-color: black;
+    
+}
+.main
+{
+    position: relative;
+    min-height: 80px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 100px;
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+.title{
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
+.navigation
+{
+    padding: 13px 23px 13px 23px;
+    display: flex;
+}
+.navigation li
+{
+    list-style: none;
+}
+.navigation li a
+{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.navigation li a:hover{
+    padding: 13px 13px 13px 13px;
+    border-radius: 15px;
+    background:linear-gradient(60deg,#ec0ab0,#0895dc);
+}
+.container{
+    position: relative;
+    width: 320px;
+    height: 430px;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.intro-content {
+    height: 35px;
+}
+.intro-content h2{
+    font-family: 'abrill fatface',cursive;
+    font-weight: 400;
+
+}
+.intro-content h2 span{
+    /*color: #6236ff;*/
+    color: lightblue;
+}
+.intro-content p{
+    font-family: 'poppins',sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.intro-content p span{
+    color: #adadad;
+    font-weight: lighter;
+    font-size: .8rem;
+}
+.form{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.input{
+    position: relative;
+}
+.input input{
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 40px;
+    transition: .2s;
+    border-bottom: 2px solid #adadad;
+}
+.input label{
+    position: absolute;
+    top: 1px;
+    left: 0;
+    color: #adadad;
+    font-size: .8rem;
+    font-family: 'poppins',cursive;
+    transition: .2s;
+}
+.input input:focus ~ label , .input input:valid ~ label{
+    top: -5px;
+    color: #000;
+
+}
+.input input:focus{
+    border-bottom-color: #000;
+}
+.order-link{
+    margin-top: 6px;
+    font-size: 13px;
+}
+.input button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    background: linear-gradient(60deg,#ec0ab0,#0895dc);
+    color: black;
+    font-family: 'poppins',sans-serif;
+}
+.input button:hover{
+    background: #0895dc;
+}
