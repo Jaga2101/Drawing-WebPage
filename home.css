@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-family: 'Ubuntu',sans-serif;
 }
+.mobscr{
+	display: none;
+}
 .main
 {
     position: relative;
@@ -126,5 +129,33 @@ header
 .art{
     display: inline-block;
     justify-content: space-around;
+
+}
+
+@media screen and (max-width:800px) {
+	body{
+		background: linear-gradient(60deg,#ec0ab0,#0895dc);
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+	.mobscr{
+		display: inline;
+		background-color: orange;
+		width: 280px;
+		height: 300px;
+		
+	}
+	.mobhe{
+		font-size: 18px;
+		color: greenyellow;
+		text-align: center;
+	}
+	.mobhe span{
+		font-size: 18px;
+		color: white;
+	}
+	.main{
+		display: none;
+	}
 
 }
