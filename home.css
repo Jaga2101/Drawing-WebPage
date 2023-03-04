@@ -134,20 +134,20 @@ header
 
 @media screen and (max-width:800px) {
 	body{
-		background: linear-gradient(60deg,#ec0ab0,#0895dc);
+		background: white;
 		margin-left: 40px;
 		margin-right: 40px;
 	}
 	.mobscr{
 		display: inline;
-		background-color: orange;
+		background: linear-gradient(60deg,#ec0ab0,#0895dc);
 		width: 280px;
 		height: 300px;
 		
 	}
 	.mobhe{
 		font-size: 18px;
-		color: greenyellow;
+		color: #ec0ab0;
 		text-align: center;
 	}
 	.main{
